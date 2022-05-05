@@ -25,9 +25,9 @@ const handleAddBtn = ()  => {
     document.getElementById("task").value = "";
     document.getElementById("name").value = "";
 
-    var listTodo1 = document.createTextNode(nametxt);
-    var listTodo2 = document.createTextNode(emailtxt);
-    var listTodo3 = document.createTextNode(tasktxt);
+    var listTodo1 = document.createTextNode( nametxt);
+    var listTodo2 = document.createTextNode( emailtxt);
+    var listTodo3 = document.createTextNode( tasktxt);
     
     // Creating Edit button & delete button
     var editBtn = document.createElement("button");
@@ -43,7 +43,7 @@ const handleAddBtn = ()  => {
         document.getElementById("email").value = emailtxt;
         document.getElementById("name").value = nametxt;
         document.getElementById("task").value = tasktxt;
-        
+
     }
 
 
@@ -60,7 +60,7 @@ const handleAddBtn = ()  => {
         bigDiv.appendChild(createNameDiv);
         bigDiv.appendChild(createEmailDiv);
         bigDiv.appendChild(createTaskDiv);
-        bigDiv.append(editBtn,deleteBtn)
+        bigDiv.append(editBtn,deleteBtn);
         document.getElementById('root-div').append(bigDiv);
 
     }else{
@@ -79,6 +79,11 @@ const handleAddBtn = ()  => {
     }
 
 
+}
+
+if(nametxt){
+    
+}else{
 }
 }
 
