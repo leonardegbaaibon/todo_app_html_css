@@ -12,10 +12,13 @@ const handleAddBtn = ()  => {
     
     // Creating a div element for todolists
     var bigDiv = document.createElement("div")
-    bigDiv.setAttribute("style","padding: 3%;")
+    bigDiv.setAttribute("style","padding: 3%; background-color: aliceblue; margin: 2%;")
     var createNameDiv = document.createElement("div");
+    createNameDiv.setAttribute("style","padding: 2%;")
     var createEmailDiv = document.createElement("div");
+    createEmailDiv.setAttribute("style","padding: 2%;")
     var createTaskDiv = document.createElement("div");
+    createTaskDiv.setAttribute("style","padding: 3%")
     
     var emailtxt = document.getElementById("email").value;
     var tasktxt = document.getElementById("task").value;
@@ -31,7 +34,9 @@ const handleAddBtn = ()  => {
     
     // Creating Edit button & delete button
     var editBtn = document.createElement("button");
+    editBtn.setAttribute("style","background-color: rgb(248, 156, 17); padding: 1% 2% 1% 2%; font-weight: 800; margin: 1%; border: 0px; border-radius: 10%;");
     var deleteBtn = document.createElement("button");
+    deleteBtn.setAttribute("style","background-color: rgb(248, 156, 17); padding: 1%; font-weight: 800;margin: 1%; border: 0px; border-radius: 10%;");
     
     var editText = document.createTextNode('Edit');
     var deleteTxt = document.createTextNode('Delete')
